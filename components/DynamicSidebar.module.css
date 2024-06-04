@@ -1,0 +1,21 @@
+.customMenu {
+  background-color: #93ccea !important; /* Añade !important para sobreescribir los estilos predeterminados */
+  color: white !important;
+}
+
+.menuItem,
+.menuItem a { /* Asegúrate de que los enlaces dentro de los items también tomen el color blanco */
+  color: white !important;
+}
+
+.activeMenuItem,
+.activeMenuItem a {
+  font-weight: bold !important;
+  color: white !important;
+  background-color: #7db9d3 !important; /* Valor aproximado del 10% más oscuro que #93ccea */
+}
+.dynamicSidebar {
+  height: 100vh; /* Altura completa de la ventana del navegador */
+  overflow-y: auto; /* Permite el desplazamiento si el contenido es demasiado largo */
+
+}

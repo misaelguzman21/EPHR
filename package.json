@@ -1,0 +1,43 @@
+{
+  "name": "tesina",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@date-io/dayjs": "^3.0.0",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@ethersphere/bee-js": "^6.9.1",
+    "@mui/material": "^5.15.16",
+    "@mui/x-date-pickers": "^7.3.2",
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "axios": "^1.6.8",
+    "dayjs": "^1.11.11",
+    "ganache": "^7.9.2",
+    "mocha": "^10.4.0",
+    "next": "^12.0.0",
+    "node": "^16.13.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18.2.0",
+    "semantic-ui-css": "^2.5.0",
+    "semantic-ui-react": "^2.1.5",
+    "solc": "^0.8.9",
+    "web3": "^4.1.2"
+  },
+  "devDependencies": {
+    "hardhat": "^2.22.2"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "description": ""
+}

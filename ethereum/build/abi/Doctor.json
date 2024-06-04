@@ -1,0 +1,507 @@
+[
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "doctorId",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "patientId",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "message",
+        "type": "string"
+      }
+    ],
+    "name": "PatientAdded",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_doctor",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "msg",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_patient",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "gas_used",
+        "type": "uint256"
+      }
+    ],
+    "name": "doctorAddPatientFile",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_doctor",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "message",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "_patient",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_consultation",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "_medicine",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "gas_used",
+        "type": "uint256"
+      }
+    ],
+    "name": "doctorOfferConsultation",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "__doctor",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "message",
+        "type": "string"
+      }
+    ],
+    "name": "doctorSignup",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "id",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_pat",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "_consultation",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_medicine",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_time",
+        "type": "string"
+      }
+    ],
+    "name": "addDoctorOfferedConsultation",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "id",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "patientId",
+        "type": "address"
+      }
+    ],
+    "name": "addPatientToList",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "allDoctorAddresses",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "userAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "_pat",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "_file_name",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_file_type",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_file_hash",
+        "type": "string"
+      }
+    ],
+    "name": "doctorAddFiles",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "doctorOfferedConsultationList",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "doc_id",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "consultation_advice",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "medicine",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "time_period",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getAllDoctorAddresses",
+    "outputs": [
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "doctorAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "patientAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getConsultationCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "pat",
+        "type": "address"
+      }
+    ],
+    "name": "getDoctorAddedFiles",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "string",
+            "name": "file_name",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "file_type",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "file_hash",
+            "type": "string"
+          },
+          {
+            "internalType": "address",
+            "name": "doc_id",
+            "type": "address"
+          }
+        ],
+        "internalType": "struct doctorAddedFiles[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_pat",
+        "type": "address"
+      }
+    ],
+    "name": "getDoctorConsultation",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "doc_id",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "consultation_advice",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "medicine",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "time_period",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct doctorOfferedConsultation[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "getDoctorConsultationForPatient",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "doc_id",
+            "type": "address"
+          },
+          {
+            "internalType": "string",
+            "name": "consultation_advice",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "medicine",
+            "type": "string"
+          },
+          {
+            "internalType": "string",
+            "name": "time_period",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct doctorOfferedConsultation[]",
+        "name": "",
+        "type": "tuple[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "id",
+        "type": "address"
+      }
+    ],
+    "name": "getDoctorInfo",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      },
+      {
+        "internalType": "address[]",
+        "name": "",
+        "type": "address[]"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "doctorAddress",
+        "type": "address"
+      }
+    ],
+    "name": "getPatientCount",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "userAddress",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "_name",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_phone",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "_specialization",
+        "type": "string"
+      }
+    ],
+    "name": "signUpDoctor",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]
