@@ -73,6 +73,10 @@ La implementación de una plataforma de registros electrónicos personales de sa
 2. Registrar un nuevo paciente o doctor.
 3. Subir archivos médicos y gestionar los permisos de acceso.
 
+## Tesina
+
+Para más detalles sobre el proyecto, puedes consultar la tesina completa [aquí](/TESINA FINAL A01209455.pdf).
+
 ## Contribuciones
 
 Las contribuciones son bienvenidas. Por favor, abre un issue para discutir cualquier cambio importante antes de realizarlo.
